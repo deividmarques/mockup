@@ -20,6 +20,9 @@ body{
 	z-index: 1;
 
 }
+.link-menu{
+	display: inline-block;
+}
 .title-header{
 	display: inline-block;
 }
@@ -34,10 +37,17 @@ body{
 .container{
 	overflow: hidden;
 }
+
+/* Lateral*/
+
 .sidebar{
 	background: #333;
 	float: left;
+	margin-left: -250px;
 	width: 250px;
+}
+.show-sidebar .sidebar{
+	margin-left: 0;
 }
 .menu{
 	padding: 15px;
@@ -48,5 +58,13 @@ body{
 	text-decoration: none;
 }
 
+@media (min-width: 600px) {
+	.link-menu{
+		display: none;
+	}
+	.sidebar{
+		margin-left: 0;
+	}
 
+}
 
