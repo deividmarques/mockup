@@ -8,8 +8,6 @@ body{
 	font-family: Tahoma;
 	font-size: 14px;
 	color: #222;
-	min-height: 100%;
-	height: inherit;
 }
 .header, .footer, .main{
 	padding-left: 15px;
@@ -53,7 +51,6 @@ body{
 	float: left;
 	margin-left: -250px;
 	width: 250px;
-	height: 100%;
 
 }
 .show-sidebar .sidebar{
