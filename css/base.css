@@ -20,38 +20,27 @@ body{
 	z-index: 1;
 
 }
-/*.header .limit{
-	margin-left: 290px;
-}*/
 .title-header{
 	display: inline-block;
 }
-
 .main{
 	background: blue;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-
-
 .footer{
 	clear: both;
 }
 .container{
 	overflow: hidden;
 }
-
-
 .sidebar{
 	background: #333;
 	float: left;
 	width: 250px;
 }
 .menu{
-
 	padding: 15px;
-	/*position: relative;
-	top: -35px;*/
 }
 .menu a{
 	color: #fff;
