@@ -12,9 +12,9 @@ project.functions = (function() {
 	}
 
 	function heightSidebar() {
-		var heightBody = document.body.clientHeight;
+		var heightWindow = window.innerHeight;
 		var el = document.querySelector('.sidebar');
-		el.style.height = heightBody + 'px';
+		el.style.height = heightWindow + 'px';
 	}
 
 	function showSidebar() {
