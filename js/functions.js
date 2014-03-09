@@ -25,6 +25,11 @@ project.functions = (function() {
 		}
 	}
 
+	window.addEventListener('resize', function(e) {
+		e.preventDefault();
+		heightSidebar();
+	});
+
 	showHide.addEventListener('click', showSidebar);
 
 	return {
