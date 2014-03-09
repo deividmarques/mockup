@@ -20,9 +20,27 @@ body{
 	z-index: 1;
 
 }
+
 .link-menu,
 .title-header{
 	display: inline-block;
+}
+.link-menu {
+	position: relative;
+	padding-left: 2.5em;
+	text-indent: -9999px;
+}
+
+.link-menu:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: -5px;
+	width: 1.2em;
+	height: 0.16em;
+	background: #003;
+	box-shadow: 0 0.30em 0 0 #000, 0 0.6em 0 0 #000;
+	font-size: 24px;
 }
 
 .main{
@@ -65,6 +83,15 @@ body{
 	text-decoration: none;
 }
 
+/* Exceções sidebar exibida */
+
+.show-sidebar  .title-header{
+	display: none;
+}
+.show-sidebar  .link-menu{
+	margin-top: 15px;
+}
+
 @media (min-width: 600px) {
 	.link-menu{
 		display: none;
@@ -72,6 +99,7 @@ body{
 	.sidebar{
 		margin-left: 0;
 	}
+
 
 }
 
