@@ -4,12 +4,14 @@
 	var showHide = document.querySelector('.link-menu'),
 			body = document.querySelector('body');
 
-	showHide.addEventListener('click', function () {
+	function showSidebar () {
 		if (body.className.match(/show-sidebar/g)) {
-				body.classList.remove('show-sidebar');
+			body.classList.remove('show-sidebar');
 		} else {
 			body.classList.add('show-sidebar');
 		}
-	});
+	}
+
+	showHide.addEventListener('click', showSidebar);
 
 }());
