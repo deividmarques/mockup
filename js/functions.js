@@ -1,10 +1,22 @@
-(function () {
+var project = project || {};
+
+project.functions = (function() {
 	'use strict';
 
-	var showHide = document.querySelector('.link-menu'),
-			body = document.querySelector('body');
+	function init(){
+		heightSidebar();
+	}
 
-	function showSidebar () {
+	var showHide = document.querySelector('.link-menu'),
+	body = document.querySelector('body');
+
+	function heightSidebar(){
+		var heightBody = document.body.clientHeight;
+		var el = document.querySelector('.sidebar')
+		el.style.height = heightBody + 'px' ;
+	}
+
+	function showSidebar(){
 		if (body.className.match(/show-sidebar/g)) {
 			body.classList.remove('show-sidebar');
 		} else {
@@ -14,4 +26,10 @@
 
 	showHide.addEventListener('click', showSidebar);
 
+	return {
+		init: init
+	}
+
 }());
+window.onload = project.functions.init();
+
