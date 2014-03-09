@@ -43,6 +43,9 @@ body{
 
 .sidebar,
 .show-sidebar .sidebar{
+	transition: all linear 0.25s;
+	-moz-transition: all linear 0.25s;
+	-webkit-transition: all linear 0.25s;
 }
 
 .sidebar{
