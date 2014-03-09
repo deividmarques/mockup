@@ -1,4 +1,6 @@
-(function() {
+var project = {};
+
+project.functions = (function() {
 
 	'use strict';
 
@@ -20,7 +22,6 @@
 			body.classList.remove('show-sidebar');
 		} else {
 			body.classList.add('show-sidebar');
-			init();
 		}
 	}
 
@@ -31,3 +32,5 @@
 	};
 
 }());
+
+window.onload = project.functions.init();
