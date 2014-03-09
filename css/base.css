@@ -2,3 +2,56 @@
 	margin: 0;
 	padding: 0;
 }
+ul{ list-style: none;}
+
+body{
+	font-family: Tahoma;
+	font-size: 14px;
+	color: #222;
+}
+.footer, .content{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.header{
+	background: #ccc;
+	position: relative;
+	height: 35px;
+	z-index: 1;
+
+}
+.header .container{
+	margin-left: 290px;
+}
+.title-header{
+	display: inline-block;
+}
+
+.main{
+	position: relative;
+	z-index: 2;
+}
+
+.menu{
+	background: #333;
+	float: left;
+	padding: 15px;
+	position: relative;
+	top: -35px;
+	width: 250px;
+}
+.menu a{
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.content{
+	background: blue;
+	overflow: hidden;
+}
+
+
+.footer{
+	clear: both;
+}
