@@ -57,12 +57,13 @@ body{
 
 /* Lateral*/
 
-.sidebar,
+/*.sidebar,
 .show-sidebar .sidebar{
-	transition: all linear 0.25s;
-	-moz-transition: all linear 0.25s;
-	-webkit-transition: all linear 0.25s;
-}
+	transition: all linear 0.05s;
+	-moz-transition: all linear 0.05s;
+	-webkit-transition: all linear 0.05s;
+}*/
+
 
 .sidebar{
 	background: #333;
@@ -85,11 +86,18 @@ body{
 
 /* Exceções sidebar exibida */
 
-.show-sidebar  .title-header{
+/*.show-sidebar  .title-header{
 	display: none;
-}
+}*/
 .show-sidebar  .link-menu{
 	margin-top: 15px;
+}
+.show-sidebar{overflow: hidden;}
+.show-sidebar .container{
+	position: absolute;
+	left: 250px;
+	top: 0;
+	width: 100%;
 }
 
 @media (min-width: 600px) {
