@@ -1,21 +1,32 @@
-var project = {};
+// =================================
+// initialize
+var app = {};
 
-project.functions = (function() {
+app.functions = (function() {
 
 	'use strict';
 
+// =================================
+// Variables
+
 	var showHide = document.querySelector('.link-menu'),
-	body = document.querySelector('body');
+			body = document.querySelector('body');
+
+	// Function that initializes
 
 	function init() {
 		heightSidebar();
 	}
+
+	// Screen sizesproject
 
 	function heightSidebar() {
 		var heightWindow = window.innerHeight;
 		var el = document.querySelector('.sidebar');
 		el.style.height = heightWindow + 'px';
 	}
+
+	// displays and hides the sidebar
 
 	function showSidebar() {
 		if (body.className.match(/show-sidebar/g)) {
@@ -25,12 +36,18 @@ project.functions = (function() {
 		}
 	}
 
+	// Calls the function to screen size
+
 	window.addEventListener('resize', function(e) {
 		e.preventDefault();
 		heightSidebar();
 	});
 
+	// Adds the event click function to show and escoder sidebar
+
 	showHide.addEventListener('click', showSidebar);
+
+	// Return the initialized
 
 	return {
 		init: init
@@ -38,4 +55,4 @@ project.functions = (function() {
 
 }());
 
-window.onload = project.functions.init();
+window.onload = app.functions.init();
