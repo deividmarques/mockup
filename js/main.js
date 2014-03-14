@@ -1,10 +1,8 @@
-// =================================
-// initialize
-var app = {};
-
-app.functions = (function() {
+var navResize = (function() {
 
 	'use strict';
+
+
 
 // =================================
 // Variables
@@ -55,4 +53,4 @@ app.functions = (function() {
 
 }());
 
-window.onload = app.functions.init();
+window.onload = navResize.init();
